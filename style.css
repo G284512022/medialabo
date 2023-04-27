@@ -3,6 +3,9 @@ h1{
 	text-shadow: 2px 2px rgb(0, 0, 0);
 	background-color: #7f7fcf;
 }
+h2{
+    color:aquamarine
+}
 h3 {
 	font-family: system-ui;
 	color: #3f3faf;
