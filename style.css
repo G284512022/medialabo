@@ -7,3 +7,8 @@ h1 {
 	background-color: #00f7c5;
     border-bottom-style: groove;
 }
+h2 {
+	color: white;
+	text-shadow: 2px 2px navy;
+	background-color: #7f7fcf;
+}
