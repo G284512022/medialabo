@@ -1,26 +1,59 @@
-h1{
-    color: rgb(255, 255, 255);
-	text-shadow: 2px 2px rgb(0, 0, 0);
-	background-color: #7f7fcf;
-}
-h2{
-    color:aquamarine
-}
-h3 {
-	font-family: system-ui;
-	color: #3f3faf;
-	margin: 5px;
-	background: linear-gradient(white, #ffefaf);
-}
-div#zentai {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 200px 200px;
-	grid-gap: 10px;
-	width: 1024px;
-}
-
-div#zentai > div {
-	padding: 5px;
-	background-color: #0ff00b;
-}
+/* 全体のスタイル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  /* タイトルスタイル設定 */
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* リンクのスタイル設定 */
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 全体のレイアウト設定 */
+  .zentai {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* リストのスタイル設定 */
+  ol {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
