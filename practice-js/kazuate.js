@@ -10,33 +10,31 @@ let kaisu = 0;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 
 let x = 1;
-while(true){
+while(x = 8){
     hantei();
     console.log(x + "回目の予想:" + hantei);
     if(x < 4){
         if(x === 3){
-            if(yoso === kotae){
+            if(hantei() === kotae){
                 console.log('正解です．おめでとう!');
                 x = 4;
             }else{
                 console.log('まちがい．残念でした答えは' + kotae + 'です．');
             }
-            x=x+1;
         }else{
-            if(yoso === kotae){
+            if(hantei() === kotae){
                 console.log('正解です．おめでとう!');
                 x = 4;
-            }else if(yoso < kotae){
+            }else if(hantei() < kotae){
                 console.log('まちがい．答えはもっと大きいですよ');
             }else{
                 console.log('まちがい．答えはもっと小さいですよ');
             }
-            x++
         }
     }else{
         console.log("答えは" + kotae + "でした．すでにゲームは終わっています")
-        x++
     }
+    x++;
 
 }
 // ボタンを押した後の処理をする関数 hantei() の定義
