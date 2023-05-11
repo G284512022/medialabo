@@ -8,11 +8,37 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-hantei();
-hantei();
-hantei();
-hantei();
 
+let x = 1;
+while(ture){
+    hantei();
+    console.log(x + "回目の予想:" + hantei);
+    if(x < 4){
+        if(x === 3){
+            if(hantei() === kotae){
+                console.log('正解です．おめでとう!');
+                x = 4;
+            }else{
+                console.log('まちがい．残念でした答えは' + kotae + 'です．');
+            }
+            x++
+        }else{
+            if(hantei() === kotae){
+                console.log('正解です．おめでとう!');
+                x = 4;
+            }else if(hantei() < kotae){
+                console.log('まちがい．答えはもっと大きいですよ');
+            }else{
+                console.log('まちがい．答えはもっと小さいですよ');
+            }
+            x++
+        }
+    }else{
+        console.log("答えは" + kotae + "でした．すでにゲームは終わっています")
+        x++
+    }
+
+}
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
