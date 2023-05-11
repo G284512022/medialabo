@@ -10,7 +10,7 @@ let kaisu = 0;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 
 let x = 1;
-while(ture){
+while(true){
     hantei();
     console.log(x + "回目の予想:" + hantei);
     if(x < 4){
