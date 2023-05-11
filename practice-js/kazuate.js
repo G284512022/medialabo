@@ -21,7 +21,7 @@ while(true){
             }else{
                 console.log('まちがい．残念でした答えは' + kotae + 'です．');
             }
-            x++
+            x=x+1;
         }else{
             if(yoso === kotae){
                 console.log('正解です．おめでとう!');
