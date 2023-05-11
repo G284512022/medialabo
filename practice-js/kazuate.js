@@ -15,7 +15,7 @@ while(ture){
     console.log(x + "回目の予想:" + hantei);
     if(x < 4){
         if(x === 3){
-            if(hantei() === kotae){
+            if(yoso === kotae){
                 console.log('正解です．おめでとう!');
                 x = 4;
             }else{
@@ -23,10 +23,10 @@ while(ture){
             }
             x++
         }else{
-            if(hantei() === kotae){
+            if(yoso === kotae){
                 console.log('正解です．おめでとう!');
                 x = 4;
-            }else if(hantei() < kotae){
+            }else if(yoso < kotae){
                 console.log('まちがい．答えはもっと大きいですよ');
             }else{
                 console.log('まちがい．答えはもっと小さいですよ');
