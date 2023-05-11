@@ -11,7 +11,6 @@ let kaisu = 0;
 
 let x = 1;
 while(x < 8){
-    hantei();
     console.log(x + "回目の予想:" + hantei);
     if(x < 4){
         if(x === 3){
