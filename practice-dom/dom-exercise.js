@@ -22,21 +22,23 @@ p.style.color = 'green';
 h2.insertAdjacentElement('beforeend', p);
 // 練習4-3 写真表作成プログラム
 let div = document.querySelector('div#phototable');	
+let p1 = document.createElement('p');
 let img1 = document.createElement('img');
 img1.src = 'taro.png';
-let p1 = document.createElement('p');
-p1.insertAdjacentElement('beforeend',img1);
-div.insertAdjacentElement('beforeend',p1);
+p1.insertAdjacentElement('beforeend', img1);
+div.insertAdjacentElement('beforeend', p1);
+
+let p2 = document.createElement('p');
 let img2 = document.createElement('img');
 img2.src = 'jiro.png';
-let p2 = document.createElement('p');
-p2.insertAdjacentElement('beforeend',img2);
-div.insertAdjacentElement('beforeend',p2);
+p2.insertAdjacentElement('beforeend', img2);
+div.insertAdjacentElement('beforeend', p2);
+
+let p3 = document.createElement('p');
 let img3 = document.createElement('img');
 img3.src = 'hanako.png';
-let p3 = document.createElement('p');
-p3.insertAdjacentElement('beforeend',img3);
-div.insertAdjacentElement('beforeend',p3);
+p3.insertAdjacentElement('beforeend', img3);
+div.insertAdjacentElement('beforeend', p3);
 // 練習4-4 箇条書き削除プログラム
 
 
