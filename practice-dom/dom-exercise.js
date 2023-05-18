@@ -40,7 +40,14 @@ img3.src = 'hanako.png';
 p3.insertAdjacentElement('beforeend', img3);
 div.insertAdjacentElement('beforeend', p3);
 // 練習4-4 箇条書き削除プログラム
-
-
+let liElements = document.querySelectorAll('ul#location > li');
+for (let li of liElements) {
+    li.remove();
+}
 // 練習4-5 箇条書き追加プログラム
-
+let ul = document.querySelector('ul#location');
+for (let city of data) {
+    let li = document.createElement('li');
+    li.textContent = `${city.name} ... 緯度: ${city.lat}, 経度: ${city.lng}`;
+    ul.append(li);
+}
