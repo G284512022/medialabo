@@ -22,9 +22,21 @@ p.style.color = 'green';
 h2.insertAdjacentElement('beforeend', p);
 // 練習4-3 写真表作成プログラム
 let div = document.querySelector('div#phototable');	
-let p2 = document.createElement('p2');
-p2.setAttribute('href', 'https://ja.wikipedia.org/wiki/ハチ');
-div.insertAdjacentElement('beforeend',p2);
+let img = document.createElement('img');
+img.src = 'taro.png';
+p.insertAdjacentElement('beforeend',img);
+let p = document.createElement('p');
+div.insertAdjacentElement('beforeend',p);
+let img = document.createElement('img');
+img.src = 'jiro.png';
+p.insertAdjacentElement('beforeend',img);
+let p = document.createElement('p');
+div.insertAdjacentElement('beforeend',p);
+let img = document.createElement('img');
+img.src = 'hanako.png';
+p.insertAdjacentElement('beforeend',img);
+let p = document.createElement('p');
+div.insertAdjacentElement('beforeend',p);
 
 // 練習4-4 箇条書き削除プログラム
 
