@@ -4,10 +4,10 @@ console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 1;
 
 function hantei() {
-    let yoso = 4;
+    let yoso = parseInt(document.getElementById("guess").value);
     document.getElementById("kaisu").textContent = kaisu;
     document.getElementById("answer").textContent = yoso;
-  
+
     if(kaisu < 4){
         if(kaisu === 3){
             if(yoso === kotae){
@@ -32,4 +32,4 @@ function hantei() {
     kaisu++;
 }
 
-hantei();
+document.getElementById("submit").addEventListener("click", hantei);
