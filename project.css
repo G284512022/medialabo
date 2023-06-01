@@ -34,3 +34,15 @@ input {
     justify-content: center;
     margin: 0 auto;
   }
+  select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: #cf88e7;
+    color: #fff;
+    border: 1px solid rgb(98, 73, 240);
+    padding: 4px;
+    border-radius: 9px;
+  }
+
