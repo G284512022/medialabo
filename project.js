@@ -1,11 +1,14 @@
 let b = document.querySelector('#bt');
 b.addEventListener('click', bt);
 
-
 // 通信を開始する処理
 function bt() {
+    var selectElement = document.getElementById('lang');
+    var selectedOptionId = selectElement.options[selectElement.selectedIndex].id;
+    console.log(selectedOptionId); 
+
     // URL を設定
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
+    let url = `https://www.nishita-lab.org/web-contents/jsons/openweather/${selectedOptionId}.json`;
 
     // 通信開始
     axios.get(url)
@@ -26,6 +29,7 @@ function showResult(resp) {
 
     // data をコンソールに出力
     console.log(data);
+    console.log(data.name);
 
 }
 
