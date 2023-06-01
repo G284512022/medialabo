@@ -19,12 +19,6 @@ h2 {
 	margin: 5px;
 	background: linear-gradient(white, #ffefaf);
 }
-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 select {
     margin-bottom: 10px;
