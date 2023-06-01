@@ -14,16 +14,28 @@
 <h1>世界の天気情報</h1>
 
 <form action="#">
-    <label for="lang">Language</label>
+    <label for="lang">世界の都市</label>
     <select name="languages" id="lang">
-      <option value="javascript">JavaScript</option>
-      <option value="php">PHP</option>
-      <option value="java">Java</option>
-      <option value="golang">Golang</option>
-      <option value="python">Python</option>
-      <option value="c#">C#</option>
-      <option value="C++">C++</option>
-      <option value="erlang">Erlang</option>
+      <optgroup label="Europe ヨーロッパ">
+        <option value="Moscow">モスクワ （ロシア）</option>
+        <option value="London">ロンドン （イギリス）</option>
+        <option value="Paris">パリ （フランス）</option>
+      </optgroup>
+      <optgroup label="Asiaアジア & Oceaniaオセアニア">
+        <option value="Beijing">北京 （中華人民共和国）</option>
+        <option value="Tokyo">東京 （日本）</option>
+        <option value="Singapore">シンガポール</option>
+      </optgroup>
+      <optgroup label="Africa アフリカ">
+        <option value="Cairo">カイロ （エジプト）</option>
+        <option value="Johannesburg">ヨハネスブルク （南アフリカ）</option>
+      </optgroup>
+    </optgroup>
+    <optgroup label="Americas アメリカ州">
+      <option value="Rio de Janeiro">リオデジャネイロ （ブラジル）</option>
+      <option value="New York">ニューヨーク （アメリカ合衆国）</option>
+      <option value="Los Angeles">ロサンゼルス （アメリカ合衆国）</option>
+    </optgroup>
     </select>
     <input type="submit" value="Submit" />
 </form>
