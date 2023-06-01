@@ -30,6 +30,24 @@ function showResult(resp) {
     // data をコンソールに出力
     console.log(data);
     console.log(data.name);
+    console.log(data.coord.lon);
+    console.log(data.coord.lat);
+    console.log(data.weather[0].description);
+    console.log(data.main.temp_min);
+    console.log(data.main.temp_max);
+    console.log(data.main.humidity);
+    console.log(data.wind.speed);
+    console.log(data.wind.deg);
+    document.getElementById("name").innerHTML = data.name;
+    document.getElementById("coord.lon").innerHTML = data.coord.lon;
+    document.getElementById("coord.lat").innerHTML = data.coord.lat;
+    document.getElementById("weather.description").innerHTML = data.weather[0].description;
+    document.getElementById("main.temp_min").innerHTML = data.main.temp_min;
+    document.getElementById("main.temp_max").innerHTML = data.main.temp_max;
+    document.getElementById("main.humidity").innerHTML = data.main.humidity;
+    document.getElementById("wind.speed").innerHTML = data.wind.speed;
+    document.getElementById("wind.deg").innerHTML = data.wind.deg;
+    
 
 }
 
