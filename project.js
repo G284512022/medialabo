@@ -1,4 +1,4 @@
-let b = document.querySelector('#sendRequest');
+let b = document.querySelector('#bt');
 b.addEventListener('click', sendRequest);
 
 
@@ -27,8 +27,6 @@ function showResult(resp) {
     // data をコンソールに出力
     console.log(data);
 
-    // data.x を出力
-    console.log(data.x);
 }
 
 // 通信エラーが発生した時の処理
