@@ -1,9 +1,9 @@
 let b = document.querySelector('#bt');
-b.addEventListener('click', sendRequest);
+b.addEventListener('click', bt);
 
 
 // 通信を開始する処理
-function sendRequest() {
+function bt() {
     // URL を設定
     let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
 
