@@ -25,8 +25,14 @@ div.zentai {
 	grid-gap: 20px;
 	width: 1024px;
 }
-
 div.zentai > div {
 	padding: 5px;
 	background-color: #afc8ff;
+}
+.box{
+	border: 1px solid navy;
+	width: 100px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
