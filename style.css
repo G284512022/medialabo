@@ -29,6 +29,17 @@ div.zentai > div {
 	padding: 5px;
 	background-color: #afc8ff;
 }
+a:link {
+	color: rgb(25, 255, 128);
+}
+
+a:visited {
+	color: rgb(123, 0, 255);
+}
+
+a:hover {
+	text-decoration: none;
+}
 .box{
 	border: 1px solid navy;
 	width: 100px;
