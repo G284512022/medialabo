@@ -32,11 +32,9 @@ div.zentai > div {
 a:link {
 	color: rgb(25, 255, 128);
 }
-
 a:visited {
 	color: rgb(123, 0, 255);
 }
-
 a:hover {
 	text-decoration: none;
 }
